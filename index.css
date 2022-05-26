@@ -5,7 +5,25 @@ body {
     margin: 0;
 }
 
+div table {
+    margin: 0 5rem;
+}
+
+table td, th  {
+    padding: 0.5rem;
+}
+
 .heading {
     font-family: 'Roboto', sans-serif;
     padding: 0.3rem 2rem;
 }
+
+.timeBlock {
+    margin: 0 2rem;
+    padding: 0.5rem 0;
+}
+
+#updatedTime {
+    font-weight: 700;
+}
+

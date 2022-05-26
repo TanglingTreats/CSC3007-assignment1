@@ -1,13 +1,54 @@
 <html>
     <head>
         <link href="index.css" rel="stylesheet" />
+
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <title>Assignment 1</title>
     </head>
     <body>
         <div class="heading">
             <h1>Hourly PSI Data</h1>
         </div>
+        <div class="timeBlock">
+            <p>
+                Updated Time:
+                <span id="updatedTime">Time to Update</span>
+            </p>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>
+                            National
+                        </th>
+                        <th>
+                            North
+                        </th>
+                        <th>
+                            South
+                        </th>
+                        <th>
+                            East
+                        </th>
+                        <th>
+                            West
+                        </th>
+                        <th>
+                            Central
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Scripts Are Here -->
         <script src="apiIndex.js"/>
     </body>
 </html>
