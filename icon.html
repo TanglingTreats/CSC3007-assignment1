@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link href="index.css" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <title>Icon</title>
+
+        <style>
+            .eyes {
+                fill: #291E13;
+                stroke: #000000;
+                stroke-width: 10;
+            }
+            .highlight {
+                fill: #FFFFFF;
+            }
+            .brow {
+                fill: #000000;
+                stroke: #000000;
+                stroke-width: 15;
+            }
+        </style>
+    </head>
+    <body>
+        <svg width="1000" height="1000">
+            <g class="eyes">
+                <circle cx="250" cy="225" r="180"></circle>
+                <circle cx="750" cy="225" r="180"></circle>
+            </g>
+            <g class="highlight">
+                <rect class="rect" x="150" y="100" width="100" height="100" rx="15"></rect>
+                <rect class="rect" x="650" y="100" width="100" height="100" rx="15"></rect>
+            </g>
+            <g class="brow">
+                <line x1="100" y1="25" x2="425" y2="25"></line>
+                <line x1="575" y1="25" x2="900" y2="25"></line>
+            </g>
+            <path d="M465 450, L535 450, L570 485, L535 525, L465 525, L430 485" ></path>
+        </svg>
+    </body>
+</html>
