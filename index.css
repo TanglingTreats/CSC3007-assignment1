@@ -3,11 +3,12 @@
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
+    height: 100%;
 }
 
-div table {
+.content table {
     margin: 0 5rem;
-    border-collapse: collapse
+    border-collapse: collapse;
 }
 
 table td, th  {
@@ -47,3 +48,45 @@ table th {
     font-weight: 700;
 }
 
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .content table {
+        margin: 0 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    table td, th {
+        padding: 0.3rem 0.9rem;
+    }
+
+    .content {
+        display: block;
+        width: 100%;
+        height: 80%;
+        overflow-x: scroll;
+    }
+
+    .headerIndex, .dataIndex {
+        position: -webkit-sticky;
+        position: sticky;
+        background-color: white;
+        left: 0;
+    }
+
+    .content table thead {
+        position: -webkit-sticky;
+        position: sticky;
+        background-color: white;
+        top: 0;
+        z-index: 1;
+    }
+
+    #tableBody {
+        overflow-y: scroll;
+        height: 100%;
+    }
+}
