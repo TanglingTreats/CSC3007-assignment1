@@ -19,6 +19,12 @@ table th {
     border-top: 1px solid #EEEEEE;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .heading {
     font-family: 'Roboto', sans-serif;
     padding: 0.3rem 2rem;
