@@ -11,12 +11,20 @@ div table {
 }
 
 table td, th  {
-    padding: 0.5rem;
+    padding: 0.7rem 1.3rem;
     border-bottom: 1px solid #EEEEEE;
 }
 
 table th {
     border-top: 1px solid #EEEEEE;
+}
+
+.number-align {
+    text-align: right;
+}
+
+.capitalize {
+    text-transform: capitalize;
 }
 
 .content {

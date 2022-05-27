@@ -35,12 +35,20 @@ function formatData(elem, dataBlock) {
     const cellWest = row.insertCell();
     const cellCentral = row.insertCell();
 
-    cellName.innerHTML = `${data}`;
+    const rowText = data.replace(/_/g, " ");
+    cellName.className = "capitalize";
+    cellName.innerHTML = `${rowText}`;
+    cellNational.className = "number-align";
     cellNational.innerHTML = `${dataBlock[data].national}`;
+    cellNorth.className = "number-align";
     cellNorth.innerHTML = `${dataBlock[data].north}`;
+    cellSouth.className = "number-align";
     cellSouth.innerHTML = `${dataBlock[data].south}`;
+    cellEast.className = "number-align";
     cellEast.innerHTML = `${dataBlock[data].east}`;
+    cellWest.className = "number-align";
     cellWest.innerHTML = `${dataBlock[data].west}`;
+    cellCentral.className = "number-align";
     cellCentral.innerHTML = `${dataBlock[data].central}`;
   }
 }
